@@ -2,12 +2,12 @@ import {shallow} from 'enzyme';
 import Congrats from './Congrats';
 import {findByTestAttr, checkProps} from '../test/testUtls';
 const defaultProps={success:true} 
+
+
 const setup = (props={})=>{
-
-
     const setupProps={...defaultProps, ...props}
     return shallow(<Congrats {...setupProps}/>)
-}
+}   
 
 
 test('should render without error', () => {
